@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fascinate&family=Fascinate+Inline&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
+
+body {
+    background-image: url(/assets/background.png);
+    background-size: 100vw;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-bottom: 1px solid #F5EAE8;
+}
+
+.nav-text {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    width: 600px;
+    color: #EA492E;
+    font-family: 'poppins', sans-serif;
+    font-size: 13px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #EA492E;   
+   }
+   
+a:hover{
+   color: #e98c7c;  
+}
+
+.nav-content {
+    font-weight: normal
+}
+
+.logo-box {
+    position: relative;
+    left: 50px;
+    bottom: 67px;
+    height: 20px;
+    /* border: 1px solid red; */
+    width: fit-content;
+    height: fit-content;
+}
+
+.logo {
+    font-size: 26px;
+    font-family: 'inika';
+
+    /* border: 1px solid rgb(0, 255, 128); */
+}
+
+
+.page-head {
+    margin-top: 25px;
+    /* border: 1px solid red; */
+}
+
+.head-text {
+    margin-bottom: -15px;
+    font-size: 52px;
+    font-family: 'inika';
+    text-align: center;
+}
+
+span {
+    color: #EA492E;
+}
+
+.head-slogan {
+    font-weight: lighter;
+    font-size: 25px;
+    font-family: 'poppins';
+    text-align: center;
+}
+
+
+
+.input-main {
+    margin-top: 40px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+}
+
+.inputbox {
+    height: 52px;
+    display: flex;
+    /* border: 1px solid rgb(14, 83, 230); */
+    text-align: center;
+}
+
+input {
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 0px 20px rgb(239, 239, 239);
+    border-radius: 10px 0px 0px 10px;
+    padding: 17px;
+    width: 650px;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    font-family: 'poppins';
+    color: #E6E6E6;
+}
+
+input::-webkit-search-decoration {
+    padding-left: 10px;
+    font-family: 'poppins';
+    color: #e21818;
+}
+
+.button {
+    position: relative;
+    right: 1px;
+    background-color: #EA492E;
+    border-radius: 0px 11px 11px 0px;
+    height: 52px;
+    width: 100px;
+}
+
+.search-img {
+    margin-top: 10px;
+    margin-right: 5px;
+    height: 34px;
+}
+
+.recommended {
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'poppins';
+    font-weight: normal;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #4B4B4B;
+}
+
+.recommended-meal {
+    box-shadow: 0px 0px 20px rgb(238, 238, 238);
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 13px;
+    height: 350px;
+    width: 400px;
+    margin-left: 36%;
+}
+
+.recommended-img-div {
+    /* border: 1px solid blue; */
+    height: 270px;
+    width: 400px;
+    border-radius: 12px 12px 0px 0px;
+    background-image: url();
+    background-size: cover;
+}
+
+.recommended-meal-title {
+    margin-left: 20px;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    color: #EA492E
+}
+
+.recommended-meal-ingredients {
+    line-height: 0px;
+    margin-left: 20px;
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #4B4B4B;
+
+}
+
+.recommended-meal-ingredients:hover {
+    color: #b8b8b8;
+    cursor: pointer;
+}
+
+
+.search-result {
+    display: none;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+
+.results {
+    margin-left: 6%;
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    grid-template-rows: repeat(4, 370px);
+    row-gap: 30px;
+    column-gap: 30px;
+    /* border: 1px solid green; */
+    width: fit-content;
+    height: fit-content;
+    display: none;
+}
+
+.box {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgb(238, 238, 238);
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 13px;
+    height: 350px;
+    width: 400px;
+}
+
+footer {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EA492E;
+    width: 100%;
+    height: 90px;
+}
+
+.kalvian {
+    color: white;
+    font-size: 23px;
+    font-family: 'poppins';
+    font-weight: normal;
+}
+
+.resultimg {
+    background-image: url();
+    background-size: cover;
+}
+
+
+/* modal container (ingredients) */
+
+
+.modal-container{
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+
+.modal-container.show{
+    opacity: 1;
+    pointer-events: auto ;
+}
+
+
+.ingredients-modal {
+    max-width: 100%;
+    /* display: none; */
+    padding: 15px 10px;
+    width: 1200px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(211, 211, 211);
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 13px;
+}
+
+.ingredients {
+    font-family: 'poppins', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #4B4B4B;
+    text-decoration: underline;
+    margin-left: 40px;
+
+}
+
+.modal-title {
+    font-size: 27px;
+    margin-left: 43px;
+
+}
+
+.modal-img {
+    /* border: 1px solid blue; */
+    height: 350px;
+    width: 400px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    background-image: url(/assets/image1.png);
+    background-size: cover;
+}
+
+.modal-content{
+    display: flex;
+    /* border: 1px solid #e21818; */
+}
+
+.modal-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    /* border: 1px solid rgb(233, 27, 174); */
+}
+
+.close{
+    margin-right: 40px;
+    height: 16px;
+}
+
+.close:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.ingredient-list{
+    margin-left: 15px;
+    font-family: 'poppins', sans-serif;
+    color: #4B4B4B;
+    font-size: 20px;
+}
